@@ -1,0 +1,49 @@
+button{
+    border: 0px;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    background-color:black;
+    margin-bottom: 5pt;
+    margin-top: 15pt;
+    margin-right: 10pt;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+fieldset{
+    height: 250pt;
+    width: 250pt;
+    text-align: center;
+    margin: auto;
+}
+
+div{
+    line-height: 2;
+    text-align: center;
+}
+
+legend{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    font-size: 20pt;
+    text-align: center;
+}
+
+body{
+    background-color: white;
+    font-size: 15pt;
+    font-family: Arial;
+}

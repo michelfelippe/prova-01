@@ -1,0 +1,55 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-prova.css">
+    <title>Exercicio-03</title>
+</head>
+<body>
+    <p>
+        Avaliação Linguagem de Programação II
+    </p>
+
+    <p>
+        EXERCICIO 03 - Gerar 6 dezenas da Loteria!!!
+    </p>
+
+    <fieldset>
+        <legend>Exercício 03</legend>
+        <div id="num1"></div>
+        <div id="num2"></div>
+        <div id="num3"></div>
+        <div id="num4"></div>
+        <div id="num5"></div>
+        <div id="num6"></div>
+
+        <button onclick="gerarnum()">Gerar Números</button>
+    </fieldset>
+
+    <div><button><a href="exercicio-1.html"></a>VOLTAR</button></div>
+
+    <script>
+
+  function gerarnum(){
+    var num1 = document.getElementById('num1');
+    num1.innerHTML = Math.floor(Math.random()*60);
+
+    var num2 = document.getElementById('num2');
+    num2.innerHTML = Math.floor(Math.random()*60);
+
+    var num3 = document.getElementById('num3');
+    num3.innerHTML = Math.floor(Math.random()*60);
+
+    var num4 = document.getElementById('num4');
+    num4.innerHTML = Math.floor(Math.random()*60);
+    
+    var num5 = document.getElementById('num5');
+    num5.innerHTML = Math.floor(Math.random()*60);
+
+    var num6 = document.getElementById('num6');
+    num6.innerHTML = Math.floor(Math.random()*60);
+
+  }
+    </script>
+</body>
+</html>
