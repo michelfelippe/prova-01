@@ -1,4 +1,4 @@
-button{
+button, #btn{
     border: 0px;
     border-radius: 10px;
     padding: 15px;
@@ -46,4 +46,8 @@ body{
     background-color: white;
     font-size: 15pt;
     font-family: Arial;
+}
+
+ul{
+    text-align: left;
 }

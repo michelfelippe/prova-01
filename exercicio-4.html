@@ -6,17 +6,42 @@
     <title>Exercicio-04</title>
 </head>
 <body>
-    <p>
-        Avaliação Linguagem de Programação II
-    </p>
+    <p>Avaliação Linguagem de Programação II</p>
 
-    <p>
-        EXERCICIO 04 - Gerenciador de Atividades!!!
-    </p>
+    <p>EXERCICIO 04 - Gerenciador de Atividades!!!</p>
 
     <fieldset>
         <legend>Exercício 04</legend>
-        
+        <input type="text" name="tarefa" id="tarefa" placeholder="Novo Item...">
+        <input type="button" name="" id="btn" value="Adicionar Tarefa" onclick="addtarefa()">
+
+        <ul id="minhalista"></ul>
+
     </fieldset>
+
+    <div><a href="exercicio-1.html"><input type="button" id="btn" value="VOLTAR"></a></div>
+
+    <script>
+        var ul = document.getElementById("minhalista");
+        var li;
+        var elementoID;
+        var elemento;
+
+        function addtarefa(){
+            if(document.getElementById ("tarefa").value != ""){
+                elemento = document.getElementById("tarefa");
+                elementoID = ul.childElementCount;
+                li = criartarefa(elemento.value);
+                ul.appendChild(li);               
+            }
+        }
+
+        function criartarefa(valorItem, elementoID){
+            let li = document.createElement("li");
+            li.setAttribute("index", elementoID);
+            li.appendChild(document.createTextNode(valorItem));
+            return li;           
+        }
+    </script>
 </body>
 </html>
