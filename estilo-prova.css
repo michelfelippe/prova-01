@@ -51,3 +51,29 @@ body{
 ul{
     text-align: left;
 }
+
+#nome, #idade, #email, #senha{
+    border-radius: 3pt;
+}
+
+#erro {
+    background-color: red;
+    font-weight: bold;
+}
+
+#acerto {
+    background-color: green;
+    font-weight: bold;
+}
+
+#terceiro {
+    margin-left: 2pt;
+}
+
+#primeiro {
+    margin-left: 1pt;
+}
+
+#idade {
+    margin-left: 2pt;
+}
