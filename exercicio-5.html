@@ -18,9 +18,9 @@
         <legend>Exercício 05</legend>
         <form name="cadastro" method="POST" action="#" onsubmit="return msg(this)">
       <div> Nome: <input type="text" name="nome" id="nome" placeholder="Nome Completo" onkeydown="return/[a-z, ]/i.test(event.key)"/></div>
-      <div> Idade: <input type="number" name="idade" id="idade" placeholder="ex. 22 (somente números)"></div>
-      <div> E-mail: <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com"></div>
-      <div> Senha: <input type="password" minlength="8" name="senha" id="senha" placeholder="(Mínimo 8 caracteres)"></div>
+      <div> Idade: <input type="number" name="idade" id="idade" placeholder="ex. 22 (somente números)" required></div>
+      <div> E-mail: <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required></div>
+      <div> Senha: <input type="password" minlength="8" name="senha" id="senha" placeholder="(Mínimo 8 caracteres)" required></div>
         <div><input type="submit" name="enviar" id="btn" value="ENVIAR" onclick="msg(formulario)"></div>
         </form>
             <div id="acerto"></div>
@@ -30,26 +30,20 @@
         
         
         <script>
-        function msg(formulario){
-           //var nome = document.getElementById('nome');
-           //var idade = document.getElementById('idade');
-           //var email = document.getElementById('email');
-           //var senha = document.getElementById('senha'); 
+        function msg(formulario){       
            
-           
-           
-           if (formulario.nome.value == "" || formulario.nome.value == null &&
+            if (formulario.nome.value == "" || formulario.nome.value == null &&
            formulario.idade.value == "" || formulario.idade.value == null &&
            formulario.email.value == "" || formulario.email.value == null &&
            formulario.senha.value == "" || formulario.senha.value == null) {
             
             var erro = document.getElementById('erro');
             erro.innerHTML = `Erro ao cadastrar!!!`;
-            //return false;
+            
            } else {
             var acerto = document.getElementById('acerto');
             acerto.innerHTML = `Pessoa cadastrada com sucesso!!!`;
-            //return true;
+            
            }
         }
         </script>
