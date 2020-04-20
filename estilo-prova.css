@@ -9,6 +9,7 @@ button, #btn{
     margin-top: 15pt;
     margin-right: 10pt;
     text-align: center;
+    outline: none;
 }
 
 p{
@@ -23,10 +24,12 @@ a{
 }
 
 fieldset{
-    height: 250pt;
+    height: 350pt;
     width: 250pt;
     text-align: center;
     margin: auto;
+    border-radius: 10pt;
+    background-color: #ffffe0;
 }
 
 div{
@@ -50,6 +53,8 @@ body{
 
 ul{
     text-align: left;
+    font-family: Arial;
+    font-size: 14pt;
 }
 
 #nome, #idade, #email, #senha{
@@ -66,12 +71,8 @@ ul{
     font-weight: bold;
 }
 
-#terceiro {
+#terceiro, #primeiro {
     margin-left: 2pt;
-}
-
-#primeiro {
-    margin-left: 1pt;
 }
 
 #idade {
