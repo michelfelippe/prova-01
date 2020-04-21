@@ -28,28 +28,53 @@
      </fieldset>        
         
         <script>
-        function acerto(){
-            var acerto = document.getElementById('acerto').style.visibility = 'visible';             
-        }
-
-        function erro(){
-            var erro = document.getElementById('erro').style.visibility = 'visible';            
-        }
-
             function validacao(){
                 var nome = document.getElementById('nome').value;
                 var idade = document.getElementById('idade').value;
                 var email = document.getElementById('email').value;
                 var senha = document.getElementById('senha').value;
+                var acerto = document.getElementById('acerto').style.visibility = 'visible';
+                var erro = document.getElementById('erro').style.visibility = 'visible';
 
                 //Validando Campo Vazio
-                if (nome == "" || idade == "" || email.indexOf("@") < 1 || senha.length < 8){
+                if (nome == ""){
+                    document.getElementById('erro').style.visibility = 'visible';
                     document.getElementById('acerto').style.visibility = 'hidden';
-                    return erro();
-                    
-                } else {
-                    document.getElementById('erro').style.visibility = 'hidden';;
-                    return acerto();
+                    cadastro.nome.style.borderColor = "FF0000"                    
+                }else {
+                    document.getElementById('acerto').style.visibility = 'visible';
+                    document.getElementById('erro').style.visibility = 'hidden';
+                    cadastro.nome.style.borderColor = "00FF00"                    
+                }
+
+                if (idade == ""){
+                    document.getElementById('erro').style.visibility = 'visible';
+                    document.getElementById('acerto').style.visibility = 'hidden';
+                    cadastro.idade.style.borderColor = "FF0000"                    
+                }else {
+                    document.getElementById('acerto').style.visibility = 'visible';
+                    document.getElementById('erro').style.visibility = 'hidden';
+                    cadastro.idade.style.borderColor = "00FF00"                    
+                }
+
+                if (email.indexOf("@") < 1){
+                    document.getElementById('erro').style.visibility = 'visible';
+                    document.getElementById('acerto').style.visibility = 'hidden';
+                    cadastro.email.style.borderColor = "FF0000"
+                }else {
+                    document.getElementById('acerto').style.visibility = 'visible';
+                    document.getElementById('erro').style.visibility = 'hidden';
+                    cadastro.email.style.borderColor = "00FF00"                    
+                }
+
+                if (senha.length < 8){
+                    document.getElementById('erro').style.visibility = 'visible';
+                    document.getElementById('acerto').style.visibility = 'hidden';
+                    cadastro.senha.style.borderColor = "FF0000"
+                }else {
+                    document.getElementById('acerto').style.visibility = 'visible';
+                    document.getElementById('erro').style.visibility = 'hidden';
+                    cadastro.senha.style.borderColor = "00FF00"                    
                 }
             }
         </script>
